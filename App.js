@@ -8,7 +8,7 @@ import { useCallback } from 'react';
 import {COLORS,SIZES } from './constants'
 import { StatusBar } from 'expo-status-bar';
 import BottomTabNavigation from './navigation/BottomTabNavigation'
-
+import { ProductCardAvantageDetail} from './screens';
 /*nous allons utiliser Stack  pour gérer
   notre navigation dans notre application  */
 const Stack = createNativeStackNavigator();
@@ -33,7 +33,7 @@ export default function App() {
     return null;
   }
   return (
-   
+    <GestureHandlerRootView style={{ flex: 1 }}>
    <NavigationContainer>
     <Stack.Navigator>
       <Stack.Screen
@@ -41,10 +41,17 @@ export default function App() {
         component={BottomTabNavigation}  
         options={{headerShown:false}}    
       />
+
+      <Stack.Screen
+          name='ProductCardAvantageDetail'
+          component={ProductCardAvantageDetail}
+          options={{headerShown:false}}
+        />
     </Stack.Navigator>
   
    </NavigationContainer>
-  
+   
+  </GestureHandlerRootView>
   );
 }
 
