@@ -4,7 +4,7 @@ import { View, Text } from 'react-native';
 sur l'ecran */
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 //regrouper les fichiers Home,Profile et Search dans un fichier index pour un seul import 
-import {Home,Profile,Search} from '../screens';
+import {Commander, Home,Profile,Search} from '../screens';
 import {Ionicons} from "@expo/vector-icons"
 import { COLORS } from '../constants';
 import { setStatusBarBackgroundColor } from 'expo-status-bar';
@@ -26,8 +26,9 @@ const screenOption ={
     left: 0,
     elevation: 0,
     height: 70,
+    
 
-   }
+   },
 }
 
 const BottomTabNavigation = ()=> {
@@ -70,7 +71,7 @@ const BottomTabNavigation = ()=> {
 
         <Tab.Screen
             name='Commander'
-            component={Search}
+            component={Commander}
             options={{
                 tabBarIcon:({focused}) =>{
                     return(
