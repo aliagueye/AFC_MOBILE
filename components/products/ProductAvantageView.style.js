@@ -4,18 +4,22 @@ import { COLORS,SIZES } from "../../constants";
 const styles = StyleSheet.create({
     container:{
         width:186,
-        height:147,
+        height:235,
         borderRadius:10,
         backgroundColor:"#F5F1F1",
 
     },
     imageContainer:{
-        //flex:0.9,
+        flex:1,
         width:186,
-        height:100,
+        height:70,
         borderRadius:10,
-        //aspectRatio:1.9,
-        resizeMode:"cover"
+        
+    },
+    image:{
+        aspectRatio:1,
+        borderRadius:5
+        //resizeMode:"cover"
     },
     details:{
         padding:8
@@ -24,13 +28,13 @@ const styles = StyleSheet.create({
         fontFamily:"semibold",
         fontSize:SIZES.small14,
         color:COLORS.gray2,
-        marginBottom:2
+        marginTop:20
     },
     point:{
         fontFamily:"semibold",
         fontSize:SIZES.small14,
         color:COLORS.back_afc_color,
-        marginBottom:2
+        //marginBottom:2
     }
     
 
