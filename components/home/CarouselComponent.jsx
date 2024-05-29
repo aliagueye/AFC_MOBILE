@@ -14,7 +14,7 @@ const sliderbox8 = require('./../../assets/images/Thiakry.jpg');
 const sliderbox9 = require('./../../assets/images/pouletbraise.jpg');
 const sliderbox10 = require('./../../assets/images/pastelThon.jpg');
 
-const Carousel = ()=> {
+const CarouselComponent = ()=> {
     /** Reccupération des images qui seront utiles a notre sliderBox */
     const slides = [sliderbox1,sliderbox2,sliderbox3,sliderbox4,sliderbox5,
         sliderbox10,sliderbox9,sliderbox6,sliderbox7,sliderbox8
@@ -36,7 +36,7 @@ const Carousel = ()=> {
      </View>
   );
 }
-export default Carousel;
+export default CarouselComponent;
 
 const styles = StyleSheet.create({
     carouselContainer:{

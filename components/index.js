@@ -1,5 +1,5 @@
 import Welcome from "./home/Welcome";
-import Carousel from "./home/Carousel";
+import CarouselComponent from "./home/CarouselComponent";
 import Heading from "./home/heading";
 import ProductRow from "./products/ProductRow";
 import Temoignage from "./home/Temoignage";
@@ -13,7 +13,7 @@ import Veggies from "./cart/Veggies";
 import Boissons from "./cart/Boissons";
 export{
     Welcome,
-    Carousel,
+    CarouselComponent,
     Heading,
     ProductRow,
     Temoignage,
