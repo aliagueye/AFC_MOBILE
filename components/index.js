@@ -11,6 +11,7 @@ import Desserts from "./cart/Desserts";
 import Burgers from "./cart/Burgers";
 import Veggies from "./cart/Veggies";
 import Boissons from "./cart/Boissons";
+import Button from "./Button";
 export{
     Welcome,
     CarouselComponent,
@@ -23,5 +24,7 @@ export{
     Plats,
     Desserts,
     Boissons,
-    Veggies
+    Veggies,
+    Button
+
 }

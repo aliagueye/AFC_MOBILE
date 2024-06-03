@@ -8,8 +8,12 @@ import { useCallback } from 'react';
 import {COLORS,SIZES } from './constants'
 import { StatusBar } from 'expo-status-bar';
 import BottomTabNavigation from './navigation/BottomTabNavigation'
-import { ProductCardAvantageDetail,productList} from './screens';
-import AvantagePaiement from './screens/AvantagePaiement';
+import { ProductCardAvantageDetail,productList,LoginPage,AvantagePaiement,
+   Orders,
+   Favorites,
+   LoyalityInfo,
+   Cart} from './screens';
+
 /*nous allons utiliser Stack  pour gérer
   notre navigation dans notre application  */
 const Stack = createNativeStackNavigator();
@@ -54,10 +58,38 @@ export default function App() {
           component={productList}
           options={{headerShown:false}}
         />
+        <Stack.Screen
+          name='Login'
+          component={LoginPage}
+          options={{headerShown:false}}
+        />
 
-    <Stack.Screen
-          name='AvantagePaiement'
-          component={AvantagePaiement}
+      <Stack.Screen
+            name='AvantagePaiement'
+            component={AvantagePaiement}
+            options={{headerShown:false}}
+            />
+      <Stack.Screen
+          name='Orders'
+          component={Orders}
+          options={{headerShown:false}}
+         />
+
+      <Stack.Screen
+          name='Favorites'
+          component={Favorites}
+          options={{headerShown:false}}
+        />
+
+      <Stack.Screen
+          name='Cart'
+          component={Cart}
+          options={{headerShown:false}}
+        />
+
+      <Stack.Screen
+          name='LoyalityInfo'
+          component={LoyalityInfo}
           options={{headerShown:false}}
         />
     </Stack.Navigator>
